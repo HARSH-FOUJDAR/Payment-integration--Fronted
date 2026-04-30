@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import { loadStripe } from "@stripe/stripe-js";
 import CheckoutForm from "./CheckoutForm";
 
-const stripePromise = loadStripe(pk_test_51TGyn4EoUfTQXtUdA6uNjn5F1vd8iQOEyh0H6JTptB2SPyV60hO0eI8ln8ggFkJxTzzDu1qmTKFZuFRwjvfhws3k00YbnpcvnZ);
+const stripePromise = loadStripe("pk_test_51TGyn4EoUfTQXtUdA6uNjn5F1vd8iQOEyh0H6JTptB2SPyV60hO0eI8ln8ggFkJxTzzDu1qmTKFZuFRwjvfhws3k00YbnpcvnZ"d);
 
 const PaymentPage = () => {
   const [clientSecret, setClientSecret] = useState("");
