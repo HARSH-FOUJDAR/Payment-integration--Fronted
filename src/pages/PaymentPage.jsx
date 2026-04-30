@@ -13,7 +13,7 @@ const PaymentPage = () => {
     const createPayment = async () => {
       try {
         const res = await axios.post(
-          "http://localhost:3000/pay/create_payment",
+          "https://payment-integration-using-backend.onrender.com/pay/create_payment",
           {
             amount: 500,
           },
